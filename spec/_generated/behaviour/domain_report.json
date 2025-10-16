@@ -1,0 +1,17 @@
+{
+  "sha": "3b5ffe73079ced34e1ccb6f01d6cc67c834f25bf",
+  "summary": {
+    "domains": 1,
+    "assigned_endpoints_pct": 1.0,
+    "assigned_entities_pct": 1.0,
+    "assigned_ui_routes_pct": 1.0
+  },
+  "conflicts": [],
+  "notes": [
+    "Single domain 'dom.plant-matcher' created for frontend-only plant matching functionality.",
+    "No backend endpoints or domain entities present.",
+    "UI routes seeded from React Router routes in src/pages folder.",
+    "All artefacts assigned with high confidence (≥0.9).",
+    "No unassigned or conflicting artefacts."
+  ]
+}
