@@ -1,0 +1,43 @@
+Green Finder — Project Specification (Summary)
+
+Purpose
+- Single-page React application scaffold for an interactive, quiz-driven flow called “Green Finder.”
+- Provides routes for a landing page, a quiz, and a results page, with a catch‑all NotFound route.
+
+Key Technologies
+- Vite + TypeScript + React
+- React Router for client-side routing
+- @tanstack/react-query for data fetching/caching (QueryClientProvider configured)
+- shadcn-ui components (Toaster, Sonner, TooltipProvider) for UI feedback and tooltips
+- Tailwind CSS for styling (with PostCSS)
+
+Runtime Behavior (from src/App.tsx)
+- Application is wrapped in QueryClientProvider and TooltipProvider
+- Toast notifications available via Toaster and Sonner
+- Routes:
+  - “/” -> Index page
+  - “/quiz” -> Quiz page
+  - “/results” -> Results page
+  - “*” -> NotFound fallback
+
+Project Structure (observed)
+- index.html — Vite entry HTML
+- src/
+  - App.tsx — App shell and route configuration
+  - main.tsx — React entry point
+  - pages/ — Page-level routes (Index, Quiz, Results, NotFound)
+  - components/ — Reusable UI components (includes shadcn-ui wiring)
+  - hooks/, lib/, data/ — App utilities and data placeholders
+  - styles: App.css, index.css
+- public/ — Static assets
+- tailwind.config.ts, postcss.config.js — Styling configuration
+- vite.config.ts — Build/tooling config
+- eslint.config.js, tsconfig*.json — Linting and TypeScript configs
+
+How to Run (see README)
+- npm i
+- npm run dev
+
+Notes
+- The spec is based on reviewing: repository root, README.md, src/ folder listing, src/App.tsx, and overall config files present at the root.
+- Specific quiz logic, data sources, and result calculations are defined within pages/components (not inspected in detail here).
