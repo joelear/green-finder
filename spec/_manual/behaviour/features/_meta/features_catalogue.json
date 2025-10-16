@@ -1,0 +1,42 @@
+{
+  "specVersion": "1.0.0",
+  "sha": "3b5ffe73079ced34e1ccb6f01d6cc67c834f25bf",
+  "domains": [
+    {
+      "id": "dom.plant-matcher",
+      "name": "Plant Matcher",
+      "description": "Enables users to find and explore plants matched to their home environment via a quiz-driven interface.",
+      "previous_ids": [],
+      "confidence": 0.9,
+      "evidence": {
+        "route_prefixes": ["/", "/quiz", "/results"],
+        "entity_names": [],
+        "package_paths": ["src/pages"]
+      },
+      "artefacts": {
+        "endpoints": [],
+        "entities": [],
+        "ui_routes": [
+          {"path": "/", "page_id": "page.plant-matcher.home", "confidence": 0.9},
+          {"path": "/quiz", "page_id": "page.plant-matcher.quiz", "confidence": 0.9},
+          {"path": "/results", "page_id": "page.plant-matcher.results", "confidence": 0.9},
+          {"path": "/*", "page_id": "page.plant-matcher.not_found", "confidence": 0.9}
+        ],
+        "packages": [
+          {"path": "src/pages", "confidence": 0.7}
+        ]
+      },
+      "pages": [
+        {"id": "page.plant-matcher.home", "name": "Home", "path": "/"},
+        {"id": "page.plant-matcher.quiz", "name": "Quiz", "path": "/quiz"},
+        {"id": "page.plant-matcher.results", "name": "Results", "path": "/results"},
+        {"id": "page.plant-matcher.not_found", "name": "Not Found", "path": "/*"}
+      ]
+    }
+  ],
+  "unassigned": {
+    "endpoints": [],
+    "entities": [],
+    "ui_routes": []
+  }
+}
